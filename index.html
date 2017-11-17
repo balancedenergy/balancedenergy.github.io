@@ -26,6 +26,11 @@
         font-style: normal;
         text-transform: none;
     }
+
+    h1.Callout {
+        padding-top: 75px;
+    }
+
     @font-face {
         font-family: 'Radiance';
         src: url('./fonts/radiance.eot');
@@ -100,11 +105,11 @@
         $( function () {
             $( '#BGItems figure img[data-id]' ).each( function () {
                 var strItemID = $( this ).attr( 'data-id' );
-                $( this ).attr( 'src', 'https://cdn.dota2.com/apps/dota2/images/items/' + strItemID + '_lg.png' );
+                $( this ).attr( 'src', 'http://cdn.dota2.com/apps/dota2/images/items/' + strItemID + '_lg.png' );
             });
             $( '#BGHeroes figure img[data-id]' ).each( function () {
                 var strHeroID = $( this ).attr( 'data-id' );
-                $( this ).attr( 'src', 'https://cdn.dota2.com/apps/dota2/images/heroes/' + strHeroID + '_full.png' );
+                $( this ).attr( 'src', 'http://cdn.dota2.com/apps/dota2/images/heroes/' + strHeroID + '_full.png' );
             });
         });
         </script>
@@ -630,7 +635,7 @@
                 <h2 class="OrangeBoxHeader">You can participate!</h2>
                 
 <figure>
-    <h1>Balance the scale.</h1>
+    <h1>Balance the scale</h1>
     <ul>
         The goal of Balanced Energy is that together we can create a way to play Dota 2 in a more satisfying and fun way, serious suggestions can be voted on and the best ones will be incorporated into the game mode.
         <br>
@@ -638,11 +643,6 @@
     </ul>
     
             </div>
-        </div>
-    </div>
-
-    <div class="Container" id="Footer">
-        <div class="Inner">
         </div>
     </div>
 
